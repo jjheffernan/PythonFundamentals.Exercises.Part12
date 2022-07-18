@@ -1,6 +1,8 @@
 from typing import List, Dict, Set, Callable
 import enum
 
+import setuptools.command.alias
+
 
 class Parity(enum.Enum):
     ODD = 0
@@ -56,8 +58,14 @@ def gen_dict(start: int, stop: int, strategy: Callable) -> Dict:
 def gen_set(val_in: str) -> Set:
     """
     Generates set based off of input strings.
-
+    inputs a string, returns a set of lowercase letters to uppercase
     :param val_in: tuple of input letters.
     :return:
     """
-    pass
+    # {expression(variable) for variable in input_set [predicate]}
+    out_set = set()
+    for character in val_in:
+        if character.islower():
+            set.add(out_set, character.swapcase())
+    return out_set
+    # pass
