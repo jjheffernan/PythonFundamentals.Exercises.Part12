@@ -9,13 +9,11 @@ class Parity(enum.Enum):
 
 def gen_list(start: int, stop: int, parity: Parity) -> List[int]:
     """
-    Oh no some evil developer decided not to write docstrings. Maybe you can use the test cases to decipher
-    what this method was supposed to do. Hey if you do, maybe you could do some good in this world by
-    updating this here docstring to something useful.
+    Generates list based off input. ascending order of even or odd based upon parity
 
-    :param start:
-    :param stop:
-    :param parity:
+    :param start: start number based
+    :param stop: number to end list, be careful not to go too big
+    :param parity: determines even or odd numbers in list
     :return:
     """
     pass
@@ -23,14 +21,12 @@ def gen_list(start: int, stop: int, parity: Parity) -> List[int]:
 
 def gen_dict(start: int, stop: int, strategy: Callable) -> Dict:
     """
-    Oh no some evil developer decided not to write docstrings. Maybe you can use the test cases to decipher
-    what this method was supposed to do. Hey if you do, maybe you could do some good in this world by
-    updating this here docstring to something useful.
-
+    Generates dict based off of input numbers and strategy. List is in ascending order based upon strategy
+    The key index is what is used to generate the value number
 
     :param start:
     :param stop:
-    :param strategy:
+    :param strategy: how should the list iterate (ex x **2 for x^2)
     :return:
     """
     pass
@@ -38,11 +34,9 @@ def gen_dict(start: int, stop: int, strategy: Callable) -> Dict:
 
 def gen_set(val_in: str) -> Set:
     """
-    Oh no some evil developer decided not to write docstrings. Maybe you can use the test cases to decipher
-    what this method was supposed to do. Hey if you do, maybe you could do some good in this world by
-    updating this here docstring to something useful.
+    Generates set based off of input strings.
 
-    :param val_in:
+    :param val_in: tuple of input letters.
     :return:
     """
     pass
